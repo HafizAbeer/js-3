@@ -3,6 +3,7 @@ var cities = ["Faisalabad","Lahore","Karachi","Islamabad"]
 
 document.getElementById("simpleAlert").onclick = function() {
     alert("This is an simple alert!!!")
+    document.getElementById("output").innerHTML = ""
 }
 
 document.getElementById("printName").onclick = function() {
@@ -33,6 +34,8 @@ function generateTable(){
     let tableNumber = prompt('Enter the table number:')
 
     let lengthOfTable = prompt('Enter the length of table:')
+
+    document.getElementById("output").innerHTML = ""
 
     for(let i = 1; i <= lengthOfTable; i++){
         document.getElementById("output").innerHTML += tableNumber + "*" + i + "=" + tableNumber*i + "<br />"
