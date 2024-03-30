@@ -28,3 +28,13 @@ function addCity(){
     
     cities.push(city)
 }
+
+function generateTable(){
+    let tableNumber = prompt('Enter the table number:')
+
+    let lengthOfTable = prompt('Enter the length of table:')
+
+    for(let i = 1; i <= lengthOfTable; i++){
+        document.getElementById("output").innerHTML += tableNumber + "*" + i + "=" + tableNumber*i + "<br />"
+    }
+}
